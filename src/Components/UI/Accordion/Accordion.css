@@ -1,0 +1,27 @@
+.accordion.active {
+  animation: hideShow .1s ease-in;
+}
+
+.accordion {
+  animation: showHide .1s ease-in;
+}
+
+@keyframes hideShow {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showHide {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  } to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
